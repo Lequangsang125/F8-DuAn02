@@ -46,6 +46,23 @@ a {
     opacity: 0.9;
 }
 
+/* tạo số dòng nếu dài hơn xuất hiện 3 chấm  */
+.line-claim {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-claim, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-claim.line-2 {
+    --line-claim: 2;
+}
+
+/* nếu không có dấu cách hoặc nhập link thì vẫn bẻ xuống dòng */
+.break-all{
+    word-break: break-all;
+}
+
 /*--------------------Header---------------*/
 .header {
     background: #FFFCF4;
@@ -375,7 +392,8 @@ a {
     /* 175% */
 }
 
-.popular .course-item .title a{
+.popular .course-item .title a {
+    padding-right: 6px;
     color: #171100;
     font-size: 1.8rem;
     font-weight: 600;
@@ -411,4 +429,5 @@ a {
 .popular .course-item .book-btn:hover {
     border-radius: 25px;
     background: #FFB900;
+    color: #fff;
 }
