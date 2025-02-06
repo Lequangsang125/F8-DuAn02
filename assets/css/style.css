@@ -220,12 +220,14 @@ a {
 
 .heading.lv1 {
     font-size: 5.8rem;
+    font-family: Sen;
     line-height: 1.17;
 }
 
 .heading.lv2 {
     color: #171100;
     font-size: 3.8rem;
+    font-family: Sen;
     font-weight: 700;
     line-height: 1.26;
     /* 126.316% */
@@ -542,6 +544,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
 }
 
 .features .desc {
@@ -558,4 +561,21 @@ a {
     min-width: 137px;
     color: #fff;
     background: var(--primary-color);
+}
+
+.features-2nd {
+    margin-top: 70px;
+}
+
+.features-2nd .body{
+    flex-direction: row-reverse;   
+}
+
+.features-2nd .content{
+    width: 49%;
+}
+
+.features-2nd .images img{
+    width: 470px;
+    height: 440px;
 }
